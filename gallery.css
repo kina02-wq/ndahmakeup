@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #eac3d7;
+}
+
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: #eac3d7;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Style umum untuk tombol */
+.button-kembali {
+  background-color: #4b77dc; /* Warna latar belakang hijau */
+  border: none; /* Hilangkan border */
+  color: white; /* Warna teks */
+  padding: 10px 20px; /* Padding atas/bawah dan kiri/kanan */
+  text-align: center; /* Pusatkan teks */
+  text-decoration: none; /* Hilangkan garis bawah teks */
+  display: inline-block; /* Tampilan inline-block */
+  font-size: 16px; /* Ukuran font */
+  margin: 10px 20px 10px 0; /* Jarak luar (margin) */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  border-radius: 5px; /* Sudut tombol melengkung */
+  transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+/* Style saat tombol dihover */
+.button-kembali:hover {
+  background-color: #517bdc; /* Warna latar belakang saat dihover */
+}
+
+/* Style saat tombol diklik */
+.button-kembali:active {
+  background-color: #5279d3; /* Warna latar belakang saat tombol diklik */
+  box-shadow: 0 5px #666; /* Bayangan tombol saat diklik */
+  transform: translateY(4px); /* Efek klik (tombol turun sedikit) */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.galeri-item {
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeri-item img {
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  display: block;
+}

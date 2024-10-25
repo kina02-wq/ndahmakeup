@@ -1,0 +1,74 @@
+/* Gaya untuk body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eac3d7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gaya untuk container */
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk judul */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk teks pesanan */
+p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Gaya untuk label data */
+strong {
+  color: #000;
+}
+
+/* Style umum untuk tombol */
+.btn {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style untuk tombol Kirim ke WhatsApp */
+.btn-success {
+  background-color: #25d366;
+  border: 2px solid #128c7e;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #128c7e;
+  border-color: #075e54;
+  color: #fff;
+}
+
+/* Style untuk tombol Kembali */
+.btn-secondary {
+  background-color: #007bff;
+  border: 2px solid #72b8ff;
+  color: #fff;
+  margin-left: 10px; /* Agar ada jarak dengan tombol WhatsApp */
+}
+
+.btn-secondary:hover {
+  background-color: #72b8ff;
+  border-color: #4893de;
+  color: #fff;
+}

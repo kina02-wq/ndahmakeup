@@ -1,0 +1,184 @@
+body {
+  padding-top: 56px; /* Mengatur jarak atas untuk mengimbangi tinggi navbar */
+  margin: 0; /* Menghilangkan margin default pada body */
+}
+
+.navbar {
+  background-color: #343032dd; /* Warna latar belakang navbar dengan transparansi */
+}
+
+.navbar-brand {
+  color: #eac3d7; /* Warna teks untuk brand di navbar */
+  font-size: 2rem; /* Ukuran font lebih besar untuk brand */
+  font-weight: 700; /* Mengatur teks menjadi tebal */
+  font-family: "Playfair Display", serif; /* Gunakan font yang lebih elegan */
+  text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+  letter-spacing: 2px; /* Mengatur spasi antar huruf */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tambahkan efek bayangan pada teks */
+  transition: color 0.3s ease; /* Mengatur transisi warna yang halus */
+}
+
+.navbar-nav .nav-link {
+  border-radius: 10px; /* Mengatur sudut melengkung pada link navbar */
+  color: #f3dcdc; /* Warna teks untuk link navbar */
+  margin-right: 15px; /* Mengatur jarak antar link di navbar */
+}
+
+.nav-link {
+  transition: box-shadow 0.3s ease; /* Transisi halus untuk efek bayangan */
+}
+
+.nav-link:hover {
+  box-shadow: 0 4px 8px rgba(246, 243, 243, 0.498); /* Efek bayangan pada hover */
+}
+
+.hero-section {
+  position: relative;
+  margin-top: -56px; /* Sesuaikan nilai ini untuk mencocokkan tinggi navbar */
+  background-image: url("background.jpeg"); /* Latar belakang gambar untuk bagian hero */
+  background-size: cover; /* Gambar latar belakang menutupi seluruh bagian hero */
+  background-position: center; /* Posisikan gambar latar di tengah */
+  background-repeat: no-repeat; /* Mengatur agar gambar latar tidak diulang */
+  height: 100vh; /* Mengatur tinggi bagian hero menjadi penuh layar */
+  color: #fff; /* Warna teks untuk kontras yang lebih baik */
+  display: flex; /* Gunakan flexbox untuk tata letak */
+  align-items: center; /* Pusatkan konten secara vertikal */
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  text-align: center; /* Pusatkan teks */
+  z-index: -1; /* Pastikan elemen berada di belakang navbar */
+}
+
+.hero-section h2,
+.hero-section p {
+  position: relative;
+  z-index: 2; /* Pastikan elemen berada di atas elemen before */
+  margin-bottom: 10px; /* Jarak bawah pada judul dan paragraf */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+
+.hero-section::before {
+  content: ""; /* Membuat pseudo-elemen sebelum konten hero */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Tambahkan lapisan transparan hitam di atas gambar */
+  z-index: 1; /* Pastikan elemen before berada di bawah teks */
+}
+
+.hero-text {
+  color: #f6f0f0; /* Warna teks untuk bagian hero */
+  max-width: 800px; /* Lebar maksimal untuk teks */
+  line-height: 1.6; /* Jarak antar baris teks */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+
+.services-section {
+  padding: 0; /* Hapus padding default pada bagian layanan */
+  height: 100vh; /* Tinggi layar penuh untuk bagian layanan */
+  background-color: #fff; /* Warna latar belakang putih */
+  display: flex; /* Gunakan flexbox untuk tata letak */
+  flex-direction: column; /* Atur item dalam kolom */
+  justify-content: center; /* Pusatkan konten secara vertikal */
+  align-items: center; /* Pusatkan konten secara horizontal */
+  text-align: center; /* Pusatkan teks */
+}
+
+.service-box {
+  padding: 20px; /* Jarak dalam elemen kotak layanan */
+  border-radius: 10px; /* Sudut melengkung pada kotak layanan */
+  background-color: #ffc0cb; /* Warna latar belakang pink */
+  text-align: center; /* Pusatkan teks dalam kotak layanan */
+  font-family: "Playfair Display", serif; /* Font yang elegan */
+  margin: 10px; /* Tambahkan margin untuk jarak antar kotak layanan */
+  flex: 1; /* Biarkan kotak tumbuh secara merata */
+  max-width: 300px; /* Lebar maksimal untuk kotak layanan */
+  box-shadow: 0 8px 16px rgba(227, 88, 178, 0.422); /* Efek bayangan pada kotak layanan */
+}
+
+.service-box img {
+  width: 150px; /* Lebar gambar dalam kotak layanan */
+  height: 150px; /* Tinggi gambar dalam kotak layanan */
+  margin-bottom: 15px; /* Jarak bawah gambar dalam kotak layanan */
+}
+
+.services-row {
+  display: flex; /* Gunakan flexbox untuk baris layanan */
+  justify-content: center; /* Pusatkan baris layanan */
+  flex-wrap: wrap; /* Biarkan item membungkus pada layar yang lebih kecil */
+  width: 100%; /* Pastikan lebar penuh untuk baris layanan */
+  max-width: 1200px; /* Batasi lebar untuk tata letak yang lebih baik */
+}
+
+.judul-tentang-kami {
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+  color: #6d094c; /* Warna teks untuk bagian tentang kami */
+  flex-wrap: wrap;
+}
+
+.text-tentang-kami {
+  max-width: 85%; /* Lebar maksimal untuk teks tentang kami */
+  height: auto; /* Otomatis tinggi */
+  border-radius: 8px; /* Sudut melengkung pada teks tentang kami */
+  font-weight: bold; /* Mengatur teks menjadi tebal */
+  color: #6d094c; /* Warna teks untuk teks tentang kami */
+}
+
+.foto-tentang-kami {
+  max-width: 90%; /* Lebar maksimal untuk gambar tentang kami */
+  height: auto; /* Otomatis tinggi */
+  border-radius: 8px; /* Sudut melengkung pada gambar tentang kami */
+  box-shadow: 0 5px 8px rgba(33, 2, 22, 0.1); /* Bayangan pada gambar tentang kami */
+}
+
+/* //referensi makeup */
+h3 {
+  font-weight: 700; /* Mengatur teks menjadi sangat tebal */
+  font-size: 1.5rem; /* Ukuran font untuk heading h3 */
+  color: #6d094c; /* Warna teks untuk heading h3 */
+}
+
+h5 {
+  font-weight: 400; /* Mengatur teks menjadi tebal sedang */
+  font-size: 1rem; /* Ukuran font untuk heading h5 */
+  color: #6d094c; /* Warna teks untuk heading h5 */
+}
+
+/* button icon keranjang belanja */
+.btn:hover {
+  background-color: #ef69a9; /* Warna yang lebih gelap saat hover */
+  box-shadow: 0 4px 12px rgb(237, 179, 217); /* Efek bayangan saat hover */
+}
+
+.btn {
+  border-radius: 4px; /* Sudut membulat pada tombol */
+  color: #272424; /* Warna teks untuk tombol */
+  padding: 10px 15px; /* Padding di dalam tombol */
+  text-decoration: none; /* Hilangkan garis bawah */
+  display: inline-flex; /* Gunakan flexbox untuk menata ikon dan teks */
+  align-items: center; /* Pusatkan ikon secara vertikal */
+  font-size: 30px; /* Ukuran font untuk ikon */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transisi halus untuk efek hover */
+}
+
+/* footer */
+.footer {
+  background-color: #343a40; /* Warna latar belakang footer */
+  color: #fff; /* Warna teks footer */
+  padding: 20px 0; /* Padding atas dan bawah footer */
+  text-align: center; /* Pusatkan teks dalam footer */
+  font-family: "Playfair Display", serif; /* Font yang elegan untuk footer */
+}
+
+.footer a {
+  color: #fff; /* Warna teks untuk link di footer */
+  text-decoration: none; /* Hilangkan garis bawah pada link */
+  margin: 0 10px; /* Tambahkan jarak antar link di footer */
+}

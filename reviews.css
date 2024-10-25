@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(background.jpeg);
+  margin: 0;
+  padding: 0;
+}
+.review-form,
+.reviews {
+  background-color: #eac3d7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #d41a84;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+button:hover {
+  background-color: #b34382;
+}
+.button-kembali {
+  background-color: #007bff;
+}
+.button-kembali:hover {
+  background-color: #0056b3;
+}
+.review {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.review:last-child {
+  border-bottom: none;
+}
+.review p {
+  margin: 0 0 10px;
+}
+.review p small {
+  color: #777;
+}
